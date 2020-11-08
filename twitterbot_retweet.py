@@ -16,7 +16,6 @@ for tweet in tweepy.Cursor(api.search, q = QUERY).items():
     try: 
         print('\nTweet by: @' + tweet.user.screen_name) 
   
-     
     
         if LIKE: 
             tweet.favorite() 
